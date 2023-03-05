@@ -1,0 +1,222 @@
+[
+    {
+        "key": "name",
+        "value": "SPS Direct Sales and Customers"
+    },
+    {
+        "key": "services",
+        "value": "Government Pricing"
+    },
+    {
+        "key": "file_format",
+        "value": "XLS"
+    },
+    {
+        "key": "includes_header",
+        "value": "TRUE"
+    },
+    {
+        "key": "custom_logic",
+        "value": ""
+    },
+    {
+        "key": "use_custom_logic",
+        "value": "FALSE"
+    },
+    {
+        "key": "extract_customers",
+        "value": "TRUE"
+    },
+    {
+        "key": "line_excluder",
+        "value": "row[\"Transaction Date\"]==\"\""
+    },
+    {
+        "key": "delimiter",
+        "value": ""
+    },
+    {
+        "key": "file_excluder",
+        "value": ""
+    },
+    {
+        "key": "sheet_excluder",
+        "value": ""
+    },
+    {
+        "key": "skip_cols",
+        "value": "1"
+    },
+    {
+        "key": "item",
+        "value": "row[\"Item Number\"].strip()"
+    },
+    {
+        "key": "st_num",
+        "value": "row[\"Ship-to Number\"]"
+    },
+    {
+        "key": "bt_num",
+        "value": "row[\"Customer Number\"]"
+    },
+    {
+        "key": "tt_key",
+        "value": "(row[\"Order Type Code\"]+row[\"Transaction Type\"]+row[\"Reason Code\"]).lower()"
+    },
+    {
+        "key": "trans_code",
+        "value": "row[\"Reason Code\"]"
+    },
+    {
+        "key": "period_date",
+        "value": "row[\"Transaction Date\"]"
+    },
+    {
+        "key": "price_date",
+        "value": "row[\"Transaction Date\"]"
+    },
+    {
+        "key": "inv_num",
+        "value": "row[\"Order Number\"]+row[\"Line Number\"]"
+    },
+    {
+        "key": "net_amount",
+        "value": "row[\"Total Net Amount\"]"
+    },
+    {
+        "key": "quantity",
+        "value": "row[\"Shipped Quantity\"]"
+    },
+    {
+        "key": "source",
+        "value": "\"SPS\""
+    },
+    {
+        "key": "bt_name",
+        "value": "row[\"Customer Name\"]"
+    },
+    {
+        "key": "bt_address1",
+        "value": "\"\""
+    },
+    {
+        "key": "bt_address2",
+        "value": "\"\""
+    },
+    {
+        "key": "bt_city",
+        "value": "\"\""
+    },
+    {
+        "key": "bt_state",
+        "value": "\"\""
+    },
+    {
+        "key": "bt_zip",
+        "value": "\"\""
+    },
+    {
+        "key": "bt_raw_cot",
+        "value": "\"\""
+    },
+    {
+        "key": "bt_id",
+        "value": "row[\"Customer Number\"]"
+    },
+    {
+        "key": "bt_id_type",
+        "value": "\"INT\""
+    },
+    {
+        "key": "bt_dea",
+        "value": "\"\""
+    },
+    {
+        "key": "bt_hin",
+        "value": "\"\""
+    },
+    {
+        "key": "bt_phs_id",
+        "value": "\"\""
+    },
+    {
+        "key": "bt_plan_id",
+        "value": "\"\""
+    },
+    {
+        "key": "bt_internal_id",
+        "value": "\"\""
+    },
+    {
+        "key": "bt_start_date",
+        "value": "\"1970-01-01\""
+    },
+    {
+        "key": "bt_end_date",
+        "value": "\"2099-12-31\""
+    },
+    {
+        "key": "st_name",
+        "value": "row[\"Ship-to Name\"]"
+    },
+    {
+        "key": "st_address1",
+        "value": "row[\"Address1\"]"
+    },
+    {
+        "key": "st_address2",
+        "value": "row[\"Address2\"]"
+    },
+    {
+        "key": "st_city",
+        "value": "row[\"City\"]"
+    },
+    {
+        "key": "st_state",
+        "value": "row[\"State\"]"
+    },
+    {
+        "key": "st_zip",
+        "value": "row[\"Zip\"]"
+    },
+    {
+        "key": "st_id",
+        "value": "row[\"Ship-to Number\"].strip()"
+    },
+    {
+        "key": "st_id_type",
+        "value": "\"INT\""
+    },
+    {
+        "key": "st_dea",
+        "value": "row[\"Ship-to DEA Number\"]"
+    },
+    {
+        "key": "st_hin",
+        "value": "\"\""
+    },
+    {
+        "key": "st_phs_id",
+        "value": "\"\""
+    },
+    {
+        "key": "st_plan_id",
+        "value": "\"\""
+    },
+    {
+        "key": "st_internal_id",
+        "value": "\"\""
+    },
+    {
+        "key": "st_start_date",
+        "value": "\"1970-01-01\""
+    },
+    {
+        "key": "st_end_date",
+        "value": "\"2099-12-31\""
+    },
+    {
+        "key": "st_raw_cot",
+        "value": "\"\""
+    }
+]

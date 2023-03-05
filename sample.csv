@@ -1,0 +1,56 @@
+key,value
+name,SPS Direct Sales and Customers
+services,Government Pricing
+file_format,XLS
+includes_header,TRUE
+custom_logic,
+use_custom_logic,FALSE
+extract_customers,TRUE
+line_excluder,"row[""Transaction Date""]=="""""
+delimiter,
+file_excluder,
+sheet_excluder,
+skip_cols,1
+item,"row[""Item Number""].strip()"
+st_num,"row[""Ship-to Number""]"
+bt_num,"row[""Customer Number""]"
+tt_key,"(row[""Order Type Code""]+row[""Transaction Type""]+row[""Reason Code""]).lower()"
+trans_code,"row[""Reason Code""]"
+period_date,"row[""Transaction Date""]"
+price_date,"row[""Transaction Date""]"
+inv_num,"row[""Order Number""]+row[""Line Number""]"
+net_amount,"row[""Total Net Amount""]"
+quantity,"row[""Shipped Quantity""]"
+source,"""SPS"""
+bt_name,"row[""Customer Name""]"
+bt_address1,""""""
+bt_address2,""""""
+bt_city,""""""
+bt_state,""""""
+bt_zip,""""""
+bt_raw_cot,""""""
+bt_id,"row[""Customer Number""]"
+bt_id_type,"""INT"""
+bt_dea,""""""
+bt_hin,""""""
+bt_phs_id,""""""
+bt_plan_id,""""""
+bt_internal_id,""""""
+bt_start_date,"""1970-01-01"""
+bt_end_date,"""2099-12-31"""
+st_name,"row[""Ship-to Name""]"
+st_address1,"row[""Address1""]"
+st_address2,"row[""Address2""]"
+st_city,"row[""City""]"
+st_state,"row[""State""]"
+st_zip,"row[""Zip""]"
+st_id,"row[""Ship-to Number""].strip()"
+st_id_type,"""INT"""
+st_dea,"row[""Ship-to DEA Number""]"
+st_hin,""""""
+st_phs_id,""""""
+st_plan_id,""""""
+st_internal_id,""""""
+st_start_date,"""1970-01-01"""
+st_end_date,"""2099-12-31"""
+st_raw_cot,""""""
